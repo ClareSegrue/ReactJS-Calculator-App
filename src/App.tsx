@@ -4,7 +4,7 @@ import './App.css';
 const App = () => {
     const [result, setResult] = useState("");
 
-    const handleClick = (e) => {
+    const handleClick = (e: { target: { name: string; }; }) => {
         setResult(result.concat(e.target.name));
     }
     const clear = () => {
